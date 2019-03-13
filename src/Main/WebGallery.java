@@ -78,7 +78,7 @@ public class WebGallery {
         for(int i = 0; i < obra.getArtista().getObras().size(); i++){
             f.write("Obra " + Integer.toString(i+1) + ": " + obra.getNombre() + obra.getDescripcion() + obra.getEstilo() + Float.toString(obra.getValor()) + '\n');
         }
-        
+        f.close();
     }
 
     public OnLinePayment getOnlinePayment() {
